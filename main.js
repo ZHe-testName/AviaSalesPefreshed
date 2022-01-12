@@ -47,7 +47,7 @@ const showCity = (input, list, event) => {
             //отрезаем часть названия равную длинне введенного в инпут значения
             const trim = fixItem.slice(0, event.target.value.length);
             //сравниваем со значением в инпут
-            if(trim === input.value){
+            if(trim === input.value.toLowerCase()){
                 return true;
             };
             //return fixItem.includes(input.value.toLowerCase());
