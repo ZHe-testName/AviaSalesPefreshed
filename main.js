@@ -26,7 +26,7 @@ const PROXY = 'https://cors-anywhere.herokuapp.com/';
 
 const API_KEY = 'fe97c4abc71297b7ea093a47d516bdfb';
 
-const CALENDAR = 'http://min-prices.aviasales.ru/calendar_preload';
+const CALENDAR = 'https://min-prices.aviasales.ru/calendar_preload';
 
 const MAX_COUNT = 5;
 
@@ -326,6 +326,7 @@ formSearch.addEventListener('submit', (event) => {
             renderCheap(response, formData.when);
         },(error) => {
             modalOpenFunc('Такое направление отсутсвует.');
+            
             console.log('Ошибка :' + error);
         });
     }else{
